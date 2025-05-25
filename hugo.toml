@@ -1,0 +1,14 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "kitab"
+title = "AquaVirPie's bookcase"
+
+disableKinds = ["taxonomy", "RSS", "sitemap"]
+pluralizelisttitles = false
+
+[params]
+  author = "Suzue"
+  description = "welcome to my book collection"
+  dateFormat = "2006-01-02"
+  footer1 = "AquaVirPie"
+  footer2 = "Moon In Pieces"

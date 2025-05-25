@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <title>AquaVirPie&#39;s bookcase</title>
+  <meta name="description" content="welcome to my book collection" />
+  <meta name="author" content="Suzue" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.147.5" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/kitab.css" />
+  <script src="/js/theme.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/js/clipboard.min.js"></script>
+  <script src="/js/fixThemeIcon.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fixThemeIcon();
+   }, false);
+  </script>
+</head>
+
+  <body class="container-md">
+    <nav class="mt-2 border-bottom border-primary">
+  <div class="d-flex flex-row position-relative">
+    <a href="/"
+      ><i title="Home" class="text-primary fs-2 my-2 me-2 bi bi-house-fill"></i
+    ></a>
+    <div class="dropdown">
+  <span data-bs-toggle="dropdown" id="bookMenuButton" aria-expanded="false">
+    <i
+      role="button"
+      class="fs-2 m-2 bi bi-book-half text-primary"
+      title="Show all books"
+    ></i>
+  </span>
+  <ul
+    class="dropdown-menu p-2"
+    style="min-width: 250px"
+    aria-labelledby="bookMenuButton"
+  >
+    
+    <li>
+      <a href="//localhost:1313/twilight/">Twilight</a> by Stephenie Meyer
+    </li>
+    
+  </ul>
+</div>
+  <div class="dropdown">
+  <span data-bs-toggle="dropdown" id="chapterMenuButton" aria-expanded="false">
+    <i
+      role="button"
+      class="fs-2 m-2 bi bi-list text-primary"
+      title="Show all books"
+    ></i>
+  </span>
+
+  <ul
+    class="dropdown-menu p-2"
+    style="min-width: 250px"
+    aria-labelledby="chapterMenuButton"
+  >
+     
+    <li>Twilight </li>
+    <li><hr class="dropdown-divider" /></li>
+     
+    <li>
+      <a href="//localhost:1313/twilight/preface/">Preface</a>
+    </li>
+    
+  </ul>
+</div>
+ 
+  </div>
+</nav>
+
+    <main class="mt-3">
+<div class="mb-2 p-3 position-relative bg-secondary rounded">
+  <h2>Preface</h2>
+  <small><div>
+  
+
+
+
+
+
+
+<span class="fs-7"><i
+    aria-label="home"
+    class="bi bi-house-fill"
+  ></i
+  ></span>
+
+
+
+<span class="fs-7"> / Twilight</span>
+
+
+
+<span class="fs-7"> / Preface</span>
+
+</div>
+
+
+</small>
+  <hr />
+  <div class="rounded">
+    <p>Tôi chưa từng nghĩ nhiều</p>
+
+  </div>
+</div>
+</main>
+    <div class="side-bar">
+   <p class="mb-1 mt-1 text-left">
+  
+  <i class="fs-2 text-seondary bi bi-arrow-right-circle-fill"></i>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <i class="fs-2 text-seondary bi bi-arrow-left-circle-fill"></i>
+  
+</p>
+ 
+  <a href="#" class="mb-1 mt-1 text-left">
+    <i
+      class="fs-2 text-primary bi bi-arrow-up-circle-fill"
+      aria-label="Scroll to top"
+    ></i>
+  </a>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      role="button"
+      class="fs-2 text-primary bi bi-share-fill"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      role="button"
+      class="toggle-theme fs-2 text-primary bi bi-lightbulb-fill"
+      onclick="toggleTheme(this)"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-success",
+      "text-white",
+      "rounded",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function () {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function () {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".bi-share-fill", {
+    text: function () {
+      return "\/\/localhost:1313\/twilight\/preface\/";
+    },
+  });
+
+  clipboard.on("success", function () {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function () {
+    displayCopyMessage(false);
+  });
+
+  const toggleTheme = (el) => {
+    let html_ = document.querySelector("html");
+    let currTheme = html_.getAttribute("data-bs-theme");
+
+    if (currTheme === "dark") {
+      el.classList.remove("bi-lightbulb-off");
+      el.classList.add("bi-lightbulb-fill");
+      localStorage.setItem("theme", "light");
+    } else {
+      el.classList.remove("bi-lightbulb-fill");
+      el.classList.add("bi-lightbulb-off");
+      localStorage.setItem("theme", "dark");
+    }
+
+    html_.setAttribute(
+      "data-bs-theme",
+      currTheme === "light" ? "dark" : "light"
+    );
+  };
+</script>
+ <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      AquaVirPie &middot; Moon In Pieces
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">kitab</a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+</footer>
+
+  </body>
+</html>
