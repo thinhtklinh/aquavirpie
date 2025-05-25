@@ -11,8 +11,7 @@
     </a>
     <div class="text-right">
       <small>
-        - {{ .Params.author }} ({{ .Date.Format (default "2006-May-13"
-        $.Site.Params.dateFormat) }})
+        by {{ .Params.author }}
       </small>
     </div>
     {{ partial "chapterlist.html" . }}

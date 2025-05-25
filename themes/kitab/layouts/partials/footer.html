@@ -1,7 +1,8 @@
 <footer class="d-flex flex-row flex-wrap justify-content-between">
   <div class="d-flex flex-column">
     <span class="mb-1">
-      {{ .Site.Params.footer1 | markdownify }} &middot; {{ .Site.Params.footer2
+      <a href="/">{{ .Site.Params.footer1 | markdownify }}</a>
+       &middot; {{ .Site.Params.footer2
       | markdownify }}
     </span>
   </div>

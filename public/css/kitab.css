@@ -2,10 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Arial", "Roboto", sans-serif;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
   overflow-y: scroll;
   min-width: 250px;
+  letter-spacing: 0.03em;
 }
+
 main {
   min-height: calc(100vh - 100px);
   border-radius: 10px;
@@ -34,17 +38,40 @@ footer {
 }
 .chapter-summary > p {
   margin-bottom: 1em;
+  font-size: 0.8rem;
+  color: var(--bs-secondary);
 }
 
 [data-bs-theme="light"] {
   color-scheme: light;
-  --bs-secondary-rgb: 237, 237, 237;
+  --bs-primary-rgb: 135, 206, 235;         /* skyblue */
+  --bs-link-color-rgb: 219, 112, 147;      /* pale violet red */
+  --bs-link-hover-color-rgb: 199, 21, 133; /* deeper pink for contrast */
+  --bs-secondary-rgb: 230, 240, 255;       /* soft blue background */
 }
 
 [data-bs-theme="dark"] {
   color-scheme: dark;
-  --bs-primary-rgb: 255, 170, 0;
-  --bs-link-color-rgb: 255, 170, 0;
-  --bs-link-hover-color-rgb: 198, 138, 0;
-  --bs-secondary-rgb: 64, 64, 64;
+  --bs-primary-rgb: 147, 112, 219; /* medium purple/blueish */
+  --bs-link-color-rgb: 255, 160, 203; /* soft pink */
+  --bs-link-hover-color-rgb: 255, 105, 180; /* stronger pink hover */
+  --bs-secondary-rgb: 50, 50, 70; /* dark bluish background */
+}
+
+a {
+  text-decoration: none;
+}
+
+.chapter-menu {
+  display: flex;
+  justify-content: space-between;
+  
+  p {
+    margin: 0;
+  }
+}
+
+.chapter-content {
+  text-align: justify;
+  /* text-indent: 2%; */
 }

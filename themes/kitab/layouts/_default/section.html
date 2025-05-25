@@ -2,15 +2,19 @@
 <div class="mb-2 p-3 bg-secondary rounded">
   <h1>{{ .Title | markdownify }}</h1>
   {{ if .Params.subtitle }}
-  <h4 class="fs-6">{{ .Params.subtitle }}</h4>
+  <h5>{{ .Params.subtitle }}</h5>
   {{ end }}
-  <h2>by {{ .Params.author }}</h2>
+  <!-- <h5>{{ .Params.author }}</h5> -->
   <hr />
 
   <ul class="list-unstyled">
     {{ range .Pages.ByWeight }}
     <li>
-      <a href="{{ .Permalink }}"> {{- .Title -}} </a>
+      <a href="{{ .Permalink }}" class="chapter-menu">
+        <p>{{- .Title -}}</p>
+        <p>{{ .Date.Format (default "???"
+        $.Site.Params.dateFormat) }}</p>
+      </a>
       <div class="small chapter-summary">
         {{ if .Params.summary }}
         <p>{{ .Params.summary }}</p>
