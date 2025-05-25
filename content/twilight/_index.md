@@ -1,6 +1,6 @@
 +++
 title = "Twilight"
-subtitle = "Translated by Suzue"
+subtitle = ""
 author = "Stephenie Meyer"
 date = "2019-05-13"
 # weight = 1
